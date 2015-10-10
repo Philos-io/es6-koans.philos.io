@@ -1,0 +1,33 @@
+{
+  "name": "es6-koans.philos.io",
+  "version": "1.0.0",
+  "description": "set of exercises to master es6 and es7",
+  "main": "index.js",
+  "scripts": {
+    "test": "./node_modules/.bin/mocha --compilers js:babel/register -w",
+    "coverage": "./node_modules/.bin/_mocha -- --compilers js:babel/register",
+    "cover":  "./node_modules/.bin/babel-node ./node_modules/.bin/isparta cover ./node_modules/.bin/_mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Philos-io/es6-koans.philos.io.git"
+  },
+  "keywords": [
+    "es6",
+    "javascript",
+    "es7"
+  ],
+  "author": "davyengone",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Philos-io/es6-koans.philos.io/issues"
+  },
+  "homepage": "https://github.com/Philos-io/es6-koans.philos.io#readme",
+  "devDependencies": {
+    "babel": "^5.8.23",
+    "chai": "^3.3.0",
+    "isparta": "^3.1.0",
+    "istanbul": "^0.3.22",
+    "mocha": "^2.3.3"
+  }
+}
