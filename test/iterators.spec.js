@@ -1,11 +1,11 @@
 import chai from 'chai';
 let expect = chai.expect;
 
+// You can implement your solution in another file or inline here
+
 describe('iterator function', ()=>{
 
-  it('Should return an object that provides a next method/function', ()=>{
-
-    // we defined it as a function but you can definetely use an simple object
+  xit('Should return an object that provides a next method/function', ()=>{
     expect(iterator())
       .to.be.an('object')
       .that.has.property('next')
