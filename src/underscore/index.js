@@ -1,28 +1,117 @@
-export function identity(value){
-    return value;
+
+/**
+** @author {your name}
+** @function
+** @param {array}
+** @return
+**/function identity(value){
 }
 
 
-export function first(list, n = 0){
-
-  console.log(n);
-  if(!list) throw new Error();
-
-  if(n===0) return list[0];
-
-  if(n>0) return list.slice(0, n);
+/**
+** @author {your name}
+** @function
+** @param {array}
+** @return
+**/
+function first(collection, n = 0){
 }
 
-export function last(list, n = 0){
+/**
+** @author {your name}
+** @function
+** @param {array}
+** @return
+**/
+function last(collection, n = 0){
 
 }
 
-export function forEach(list, callback){
-  let result = [];
+/**
+** @author {your name}
+** @function
+** @param {array}
+** @return
+**/
+function forEach(collection, callback){
+}
 
-  for (var i = 0; i < list.length; i++) {
-    callback(list[i], i, list);
-  }
+/**
+** @author {your name}
+** @function
+** @param {array}
+** @return {array}
+**/
+function map(collection, callback){
 
-  return result;
+}
+
+/**
+** @author {your name}
+** @function
+** @param {array}
+** @return {object} or {undefined}
+**/
+function find(collection, predicate){
+
+}
+
+/**
+** @author {your name}
+** @function
+** @param {array}
+** @return {array}
+**/
+function findIndex(collection, predicate){
+
+}
+
+/**
+** @author {your name}
+** @function
+** @param {array}
+** @return {array}
+**/
+function fill(collection, predicate){
+
+}
+
+/**
+** @author {your name}
+** @function
+** @param {array}
+** @return {array}
+**/
+function keys(collection){
+
+}
+
+/**
+** @author {your name}
+** @function
+** @param {array}
+** @return {array}
+**/
+function values(collection){
+
+}
+
+/**
+** @author {your name}
+** @function
+** @param
+** @return
+**/
+function find(collection){
+
+}
+
+/**
+** @author {your name}
+** @function
+** @param
+** @return
+**/
+function entries(collection){
+
 }
