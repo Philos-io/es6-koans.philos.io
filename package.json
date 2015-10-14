@@ -6,7 +6,8 @@
   "scripts": {
     "test": "./node_modules/.bin/mocha --compilers js:babel/register -w",
     "coverage": "./node_modules/.bin/_mocha -- --compilers js:babel/register",
-    "cover": "./node_modules/.bin/babel-node ./node_modules/.bin/isparta cover ./node_modules/.bin/_mocha"
+    "cover": "./node_modules/.bin/babel-node ./node_modules/.bin/isparta cover ./node_modules/.bin/_mocha",
+    "docs": "esdoc -c esdoc.json"
   },
   "repository": {
     "type": "git",

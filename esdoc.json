@@ -1,4 +1,4 @@
 {
-  "source": "./solutions",
+  "source": "./src/underscore/",
   "destination": "./esdoc"
 }
