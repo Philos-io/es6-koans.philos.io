@@ -19,7 +19,7 @@ module.exports = function (wallaby) {
         babel: babel,
         // https://babeljs.io/docs/usage/experimental/
         stage: 0,
-        optional: ['runtime']
+        optional: ['es7.comprehensions', 'runtime']
       })
     }
   };
