@@ -9,7 +9,7 @@ console.log(_);
 
 describe('Underscore library', ()=>{
 
-    describe('identity', ()=>{
+    xdescribe('identity', ()=>{
       it('Should return the same value that has been passed', ()=>{
         expect(_.identity(1)).equal(1);
         expect(_.identity({})).to.deep.equal({});
@@ -17,7 +17,7 @@ describe('Underscore library', ()=>{
       })
     });
 
-    describe('first', ()=>{
+    xdescribe('first', ()=>{
 
       let items = [1,9, 10, undefined];
 
@@ -76,7 +76,12 @@ describe('Underscore library', ()=>{
       });
     });
 
-    describe('map', ()=>{})
+    describe('map', ()=>{
+      it('should apply a function to every value in an array', function() {
+        var squaredValues = _.map([4, 2, 3, 9], (item) => item*item);
+        expect(squaredValues).to.deep.equal([16, 4, 9, 81]);
+      });
+    });
 
     describe('find', ()=>{});
 
