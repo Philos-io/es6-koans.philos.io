@@ -3,7 +3,7 @@ var babel = require('babel');
 module.exports = function (wallaby) {
   return {
     files: [
-      'arrow-function/*.js'
+      'src/**/*.js'
     ],
 
     tests: [
