@@ -21,7 +21,7 @@ describe('Underscore library', ()=>{
 
       let items = [1,9, 10, undefined];
 
-      it('Should throw an error if nothing is passed', ()=>{
+      it('Should throw an error if no argument is passed', ()=>{
         ()=>{
           _.first();
         }.should.throw(Error);
@@ -58,7 +58,7 @@ describe('Underscore library', ()=>{
       })
     });
 
-    describe('forEach', ()=>{
+    xdescribe('forEach', ()=>{
       let items = [1,9, 10, 'Philos'];
 
       it('Should return an array', ()=>{
@@ -76,14 +76,33 @@ describe('Underscore library', ()=>{
       });
     });
 
-    describe('map', ()=>{
+    xdescribe('map', ()=>{
       it('should apply a function to every value in an array', function() {
-        var squaredValues = _.map([4, 2, 3, 9], (item) => item*item);
+        let squaredValues = _.map([4, 2, 3, 9], (item) => item*item);
         expect(squaredValues).to.deep.equal([16, 4, 9, 81]);
       });
     });
 
-    describe('find', ()=>{});
+    xdescribe('find: find does not mutate the array on which it is called.', ()=>{
+
+      it('Should throw an error if no predicate is passed', ()=>{
+        ()=>{
+          _.find();
+        }.should.throw(Error);
+      });
+
+      it('should return undefined if none of the elements match the predicate', function() {
+        let isEven = (num) => { num % 2 === 0; };
+        let evens = _.find([1, 3, 7, 5], isEven);
+        expect(evens).equal(undefined);
+      });
+
+      it('should return the first element that matchs the predicate', function() {
+        let isOdd = (num) => { num % 2 !== 0; };
+        let odds = _.find([10, 2, 3, 4, 5, 6], isOdd);
+        expect(odds).equal(3);
+      });
+    });
 
     describe('findIndex', ()=>{});
 
