@@ -30,4 +30,20 @@ describe('Arrow function', () => {
         }.should.throw();
     });
   });
+
+  describe('Lexical this', ()=>{
+    it('Should return the list of fruits', ()=>{
+      var cart = {
+        owner: 'Davy',
+        fruits: ['apple', 'brussels sprout', 'banana', 'mango'],
+        printFruits: function() {
+          this.fruits.forEach(function(f){
+            console.log(this.owner + " bought " + f)
+          });
+        }
+      };
+    });
+
+    expect()
+  });
 });
