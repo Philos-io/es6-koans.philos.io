@@ -25,6 +25,8 @@ $ npm install
 1. You can use your favorite IDE but we recommend using one of those that support WallabyJS
     1. [Atom.io ](https://atom.io/)
     2. WebStorm
+    3. Any other IDEs
 2. If you haven’t done so just install [Wallabyjs](http://http//wallabyjs.com/)
+3. We will be using babel and Webpack
 
 
