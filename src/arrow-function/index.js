@@ -12,10 +12,14 @@ export function add(){
 
   var sum = 0;
   for (var i = 0; i < arguments.length; i++) {
-    if(arguments[i])
+    if(isNumber(arguments[i]))
       sum += arguments[i];
     else
       throw new Error('You can only sum numbers');
   }
   return sum;
+}
+
+function isNumber(n) {
+  return !Number.isNaN(n) && Number.isFinite(n);
 }
