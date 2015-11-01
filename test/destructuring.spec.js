@@ -9,10 +9,8 @@ describe('Destructuring', ()=>{
 
     it('With ES5', ()=>{
       // TODO: Get the first fruit
-      let first = fruits[0];
       expect(first).to.equal('brussels sprout');
       // TODO: Get the last fruit
-      let last = fruits[fruits.length-1];
       expect(last).to.equal('cherry');
     });
 
@@ -39,7 +37,7 @@ describe('Destructuring', ()=>{
       };
     }
 
-    // TODO: Retrieve the user's id, name and twitter handle from getUserInfo
+    // TODO: Retrieve the user's id, name as fullName and twitter handle from getUserInfo
     it('With ES5', ()=>{
       let userInfo = getUserInfo();
       let id = userInfo.id;
