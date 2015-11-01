@@ -2,11 +2,12 @@ import chai from 'chai';
 let expect = chai.expect;
 
 
-xdescribe('var, let, const', ()=>{
+describe('var, let, const', ()=>{
 
-    describe('var...', ()=>{
+    xdescribe('var...', ()=>{
 
       function iterator(bool){
+
         if (bool) {
             var name = 'Philos';
         }
@@ -14,37 +15,37 @@ xdescribe('var, let, const', ()=>{
       }
 
       it('what do you expect???', ()=>{
-        expect(iterator()).to.equal('')
+        expect(iterator(false))
+        .to.equal(undefined)
       });
     });
 
-    describe('let...', ()=>{
+    xdescribe('let...', ()=>{
 
       function iterator(bool){
-        let name = 'davy';
         if (bool) {
-            let name = 'Philos';
+          let name = 'Philos';
         }
+        return name;
+      }
+
+      it('what do you expect???', ()=>{
+        expect(iterator(true)).to.equal('')
+      });
+    });
+
+    xdescribe('const...', ()=>{
+
+      function iterator(bool){
+        if (bool) {
+            const name = 'we';
+        }
+
         return name;
       }
 
       it('what do you expect???', ()=>{
         expect(iterator(true)).to.equal('???')
-      });
-    });
-
-    describe('const...', ()=>{
-
-      function iterator(bool){
-        if (bool) {
-            const name = 'Philos';
-        }
-
-        return name;
-      }
-
-      it('what do you expect???', ()=>{
-        expect(iterator()).to.equal('???')
       });
     });
 });
