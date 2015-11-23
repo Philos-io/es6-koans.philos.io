@@ -8,6 +8,7 @@ chai.should();
 // You can find more information about arrow-function mdn by following the link below
 //https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions
 
+
 describe('Arrow function', () => {
   xdescribe('Add or Sum function...', () => {
     it('Should return 5 when passing 2 and 3', ()=>{
@@ -31,7 +32,7 @@ describe('Arrow function', () => {
     });
   });
 
-  describe('Lexical this', ()=>{
+  xdescribe('Lexical this', ()=>{
     it('Should return the list of fruits', ()=>{
       var cart = {
         owner: 'Davy',

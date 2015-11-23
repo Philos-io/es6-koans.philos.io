@@ -19,5 +19,4 @@ function Human({fullName}){
 Human.inject = [];
 Human.prototype.Walk = function(){}
 
-
 export default Human;
