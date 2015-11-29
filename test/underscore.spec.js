@@ -5,8 +5,6 @@ chai.should();
 
 import * as _ from '../src/underscore'
 
-console.log(_);
-
 describe('Underscore library', ()=>{
 
     xdescribe('identity', ()=>{
