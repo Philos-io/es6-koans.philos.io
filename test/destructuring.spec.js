@@ -1,7 +1,6 @@
 import chai from 'chai';
 let expect = chai.expect;
 
-
 describe('Destructuring', ()=>{
 
   describe('Array...', ()=>{
@@ -55,6 +54,4 @@ describe('Destructuring', ()=>{
       expect(twitter).to.equal('davyengone');
     })
   });
-
-
 });
