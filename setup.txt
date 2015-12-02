@@ -1,8 +1,14 @@
 -- todo:
   -- clone this repo:
-      https://gitter.im/Philos-io/es6-koans.philos.io
-  -- npm install
+      https://github.com/Philos-io/es6-koans.philos.io
+  -- npm install or npm i
   -- recommanded to use atom.io with wallabyjs
 
 -- Gitter for this repo:
      https://gitter.im/Philos-io/es6-koans.philos.io
+
+-- Pair programming is mandatory :-)
+
+
+// not related to this setup
+-- npm uninstall or npm un
