@@ -3,7 +3,7 @@ let expect = chai.expect;
 
 describe('Destructuring', ()=>{
 
-  describe('Array...', ()=>{
+  xdescribe('Array...', ()=>{
     let fruits = ['brussels sprout', 'apple', 'beetroot', 'broccoli', 'carrot', 'cherry'];
 
     it('With ES5', ()=>{
@@ -22,7 +22,7 @@ describe('Destructuring', ()=>{
   });
 
 
-  describe('Object...', ()=>{
+  xdescribe('Object...', ()=>{
     function getUserInfo(){
       return  {
         id: 8798,
