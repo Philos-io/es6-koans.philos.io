@@ -10,12 +10,12 @@ chai.should();
 
 
 describe('Arrow function', () => {
-  xdescribe('Add or Sum function...', () => {
-    it('Should return 5 when passing 2 and 3', ()=>{
+  describe('Add or Sum function...', () => {
+    xit('Should return 5 when passing 2 and 3', ()=>{
       add(2,3).should.equal(5);
     });
 
-    it('Should throw an error if only one argument is passed', ()=>{
+    xit('Should throw an error if only one argument is passed', ()=>{
         () => {
           add(2)
         }.should.throw();
@@ -25,7 +25,7 @@ describe('Arrow function', () => {
       add(1,2,3,4).should.equal(10);
     });
 
-    it('Should throw an error if any of the arguments is not a number', ()=>{
+    xit('Should throw an error if any of the arguments is not a number', ()=>{
         () => {
           add(2, undefined, '2', 10);
         }.should.throw();
@@ -44,7 +44,5 @@ describe('Arrow function', () => {
         }
       };
     });
-
-    expect()
   });
 });
