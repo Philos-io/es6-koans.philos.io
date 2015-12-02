@@ -7,16 +7,14 @@ describe('var, let, const', ()=>{
     xdescribe('var...', ()=>{
 
       function iterator(bool){
-
         if (bool) {
-            var name = 'Philos';
+          var name = 'Philos';
         }
         return name;
       }
 
-      it('what do you expect???', ()=>{
-        expect(iterator(false))
-        .to.equal(undefined)
+      xit('what do you expect???', ()=>{
+        console.log(iterator());
       });
     });
 
@@ -30,22 +28,20 @@ describe('var, let, const', ()=>{
       }
 
       it('what do you expect???', ()=>{
-        expect(iterator(true)).to.equal('')
+        console.log(iterator());
       });
     });
 
     xdescribe('const...', ()=>{
-
       function iterator(bool){
         if (bool) {
-            const name = 'we';
+          const name = 'we';
         }
-
         return name;
       }
 
       it('what do you expect???', ()=>{
-        expect(iterator(true)).to.equal('???')
+        console.log(iterator());
       });
     });
 });
