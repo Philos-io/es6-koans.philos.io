@@ -7,7 +7,7 @@ import * as _ from '../src/underscore'
 
 describe('Underscore library', ()=>{
 
-    xdescribe('identity', ()=>{
+    describe('identity', ()=>{
       it('Should return the same value that has been passed', ()=>{
         expect(_.identity(1)).equal(1);
         expect(_.identity({})).to.deep.equal({});
@@ -15,7 +15,7 @@ describe('Underscore library', ()=>{
       })
     });
 
-    xdescribe('first', ()=>{
+    describe('first: does not mutate the collection', ()=>{
 
       let items = [1,9, 10, undefined];
 
@@ -36,7 +36,7 @@ describe('Underscore library', ()=>{
       })
     });
 
-    xdescribe('last',  ()=>{
+    describe('last',  ()=>{
       let items = [1,9, 10, 'Philos'];
 
       it('Should throw an error if no collection is passed', ()=>{
@@ -50,13 +50,13 @@ describe('Underscore library', ()=>{
       });
 
       it('Should return the last n elements when a second argument is passed', ()=>{
-        expect(_.first(items, 0)).equal('Philos');
-        expect(_.first(items, 1)).to.deep.equal(['Philos']);
-        expect(_.first(items, 2)).to.deep.equal([10, 'Philos']);
+        expect(_.last(items, 0)).equal('Philos');
+        expect(_.last(items, 1)).to.deep.equal(['Philos']);
+        expect(_.last(items, 2)).to.deep.equal([10, 'Philos']);
       })
     });
 
-    xdescribe('forEach', ()=>{
+    describe('forEach', ()=>{
       let items = [1,9, 10, 'Philos'];
 
       it('Should return an array', ()=>{
@@ -74,14 +74,14 @@ describe('Underscore library', ()=>{
       });
     });
 
-    xdescribe('map', ()=>{
+    describe('map', ()=>{
       it('should apply a function to every value in an array', function() {
         let squaredValues = _.map([4, 2, 3, 9], (item) => item*item);
         expect(squaredValues).to.deep.equal([16, 4, 9, 81]);
       });
     });
 
-    xdescribe('find: find does not mutate the array on which it is called.', ()=>{
+    describe('find: find does not mutate the array on which it is called.', ()=>{
 
       it('Should throw an error if no predicate is passed', ()=>{
         ()=>{
