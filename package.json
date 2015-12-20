@@ -34,5 +34,9 @@
     "mocha": "^2.3.3",
     "sinon": "^1.17.1",
     "wallaby-webpack": "0.0.9"
+  },
+  "dependencies": {
+    "lodash": "^3.10.1",
+    "underscore": "^1.8.3"
   }
 }
