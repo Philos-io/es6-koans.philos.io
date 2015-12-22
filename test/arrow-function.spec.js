@@ -9,13 +9,13 @@ chai.should();
 //https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions
 
 
-describe('Arrow function', () => {
+xdescribe('Arrow function', () => {
   describe('Add or Sum function...', () => {
-    xit('Should return 5 when passing 2 and 3', ()=>{
+    it('Should return 5 when passing 2 and 3', ()=>{
       add(2,3).should.equal(5);
     });
 
-    xit('Should throw an error if only one argument is passed', ()=>{
+    it('Should throw an error if only one argument is passed', ()=>{
         () => {
           add(2)
         }.should.throw();
@@ -25,14 +25,14 @@ describe('Arrow function', () => {
       add(1,2,3,4).should.equal(10);
     });
 
-    xit('Should throw an error if any of the arguments is not a number', ()=>{
+    it('Should throw an error if any of the arguments is not a number', ()=>{
         () => {
           add(2, undefined, '2', 10);
         }.should.throw();
     });
   });
 
-  xdescribe('Lexical this', ()=>{
+  describe('Lexical this', ()=>{
     it('Should return the list of fruits', ()=>{
       var cart = {
         owner: 'Davy',

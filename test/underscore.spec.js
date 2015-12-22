@@ -3,7 +3,9 @@ import sinon from 'sinon';
 let expect = chai.expect;
 chai.should();
 
-import * as _ from '../src/underscore'
+//import * as _ from '../solutions/underscore.js';
+
+let _ = require('../solutions/underscore');
 
 describe('Underscore library', ()=>{
 
@@ -11,7 +13,7 @@ describe('Underscore library', ()=>{
       it('Should return the same value that has been passed', ()=>{
         expect(_.identity(1)).equal(1);
         expect(_.identity({})).to.deep.equal({});
-        expect(_.identity("philos")).to.deep.equal("philos");
+        expect(_.identity('philos')).to.deep.equal('philos');
       })
     });
 

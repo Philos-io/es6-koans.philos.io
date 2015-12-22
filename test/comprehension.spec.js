@@ -2,7 +2,7 @@ import chai from 'chai';
 let expect = chai.expect;
 
 
-describe('Comprehension...', ()=>{
+xdescribe('Comprehension...', ()=>{
 
   describe('Array...', ()=>{
     let fruits = ['brussels sprout', 'apple', 'beetroot', 'broccoli', 'carrot', 'cherry'];
