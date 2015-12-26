@@ -2,7 +2,7 @@ import chai from 'chai';
 let expect = chai.expect;
 
 
-describe('var, let, const', ()=>{
+xdescribe('var, let, const', ()=>{
 
     xdescribe('var...', ()=>{
 

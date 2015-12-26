@@ -3,9 +3,7 @@ import sinon from 'sinon';
 let expect = chai.expect;
 chai.should();
 
-//import * as _ from '../solutions/underscore.js';
-
-let _ = require('../solutions/underscore');
+import * as _ from '../src/underscore/index';
 
 describe('Underscore library', ()=>{
 
@@ -77,7 +75,7 @@ describe('Underscore library', ()=>{
     });
 
     describe('map', ()=>{
-      it('should apply a function to every value in an array', function() {
+      it('should apply a function to every value in an array', ()=>{
         let squaredValues = _.map([4, 2, 3, 9], (item) => item*item);
         expect(squaredValues).to.deep.equal([16, 4, 9, 81]);
       });
@@ -85,19 +83,19 @@ describe('Underscore library', ()=>{
 
     describe('find: find does not mutate the array on which it is called.', ()=>{
 
-      it('Should throw an error if no predicate is passed', ()=>{
+      xit('Should throw an error if no predicate is passed', ()=>{
         ()=>{
           _.find();
         }.should.throw(Error);
       });
 
-      it('should return undefined if none of the elements match the predicate', function() {
+      it('should return undefined if none of the elements match the predicate', ()=>{
         let isEven = (num) => { num % 2 === 0; };
         let evens = _.find([1, 3, 7, 5], isEven);
-        expect(evens).equal(undefined);
+        expect(evens).equal('undefined');
       });
 
-      it('should return the first element that matchs the predicate', function() {
+      it('should return the first element that matchs the predicate', ()=>{
         let isOdd = (num) => { num % 2 !== 0; };
         let odds = _.find([10, 2, 3, 4, 5, 6], isOdd);
         expect(odds).equal(3);

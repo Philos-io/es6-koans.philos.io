@@ -11,7 +11,7 @@ class Company {
   }
 }
 
-describe('Generators', ()=>{
+xdescribe('Generators', ()=>{
   it('Company should be iterable by customers', ()=>{
     let company = new Company(['Davy', 'Thomas', 'Lars']);
     expect([...company]).to.deep.equal(['Davy', 'Thomas', 'Lars']);
