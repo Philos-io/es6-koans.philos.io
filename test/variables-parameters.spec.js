@@ -2,9 +2,9 @@ import chai from 'chai';
 let expect = chai.expect;
 
 
-xdescribe('var, let, const', ()=>{
+describe('var, let, const', ()=>{
 
-    xdescribe('var...', ()=>{
+    describe('var...', ()=>{
 
       function iterator(bool){
         if (bool) {
@@ -13,12 +13,12 @@ xdescribe('var, let, const', ()=>{
         return name;
       }
 
-      xit('what do you expect???', ()=>{
-        console.log(iterator());
+      it('what do you expect???', ()=>{
+        //console.log(iterator(false)); // =>
       });
     });
 
-    xdescribe('let...', ()=>{
+    describe('let...', ()=>{
 
       function iterator(bool){
         if (bool) {
@@ -27,8 +27,10 @@ xdescribe('var, let, const', ()=>{
         return name;
       }
 
+
+
       it('what do you expect???', ()=>{
-        console.log(iterator());
+        //console.log(iterator());
       });
     });
 
@@ -41,7 +43,7 @@ xdescribe('var, let, const', ()=>{
       }
 
       it('what do you expect???', ()=>{
-        console.log(iterator());
+        //console.log(iterator());
       });
     });
 });
