@@ -1,6 +1,6 @@
 import chai from 'chai';
 import sinon from 'sinon';
-let expect = chai.expect;
+const expect = chai.expect;
 chai.should();
 
 import * as _ from '../src/underscore/index';
@@ -17,7 +17,7 @@ describe('Underscore library', ()=>{
 
     describe('first: does not mutate the collection', ()=>{
 
-      let items = [1,9, 10, undefined];
+      const items = [1,9, 10, undefined];
 
       it('Should throw an error if no argument is passed', ()=>{
         ()=>{
@@ -37,7 +37,7 @@ describe('Underscore library', ()=>{
     });
 
     describe('last',  ()=>{
-      let items = [1,9, 10, 'Philos'];
+      const items = [1,9, 10, 'Philos'];
 
       it('Should throw an error if no collection is passed', ()=>{
         ()=>{
@@ -57,14 +57,14 @@ describe('Underscore library', ()=>{
     });
 
     describe('forEach', ()=>{
-      let items = [1,9, 10, 'Philos'];
+      const items = [1,9, 10, 'Philos'];
 
       it('Should return an array', ()=>{
         expect(_.forEach(items, _.identity)).is.an('array');
       });
 
       it('Should call the callback on every single item by passing the current item, the index and the initial collection', ()=>{
-        let spy = sinon.spy(_, 'identity');
+        const spy = sinon.spy(_, 'identity');
         _.forEach(items, spy);
         expect(spy.callCount).equal(4);
         expect(spy.calledWith(1, 0, items)).equal(true);
@@ -76,7 +76,7 @@ describe('Underscore library', ()=>{
 
     describe('map', ()=>{
       it('should apply a function to every value in an array', ()=>{
-        let squaredValues = _.map([4, 2, 3, 9], (item) => item*item);
+        const squaredValues = _.map([4, 2, 3, 9], (item) => item*item);
         expect(squaredValues).to.deep.equal([16, 4, 9, 81]);
       });
     });
@@ -90,14 +90,14 @@ describe('Underscore library', ()=>{
       });
 
       it('should return undefined if none of the elements match the predicate', ()=>{
-        let isEven = (num) => { num % 2 === 0; };
-        let evens = _.find([1, 3, 7, 5], isEven);
+        const isEven = (num) => { num % 2 === 0; };
+        const evens = _.find([1, 3, 7, 5], isEven);
         expect(evens).equal('undefined');
       });
 
       it('should return the first element that matchs the predicate', ()=>{
-        let isOdd = (num) => { num % 2 !== 0; };
-        let odds = _.find([10, 2, 3, 4, 5, 6], isOdd);
+        const isOdd = (num) => { num % 2 !== 0; };
+        const odds = _.find([10, 2, 3, 4, 5, 6], isOdd);
         expect(odds).equal(3);
       });
     });
