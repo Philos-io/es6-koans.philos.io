@@ -26,8 +26,11 @@
   "homepage": "https://github.com/Philos-io/es6-koans.philos.io#readme",
   "devDependencies": {
     "babel": "^5.8.23",
+    "babel-eslint": "^5.0.0",
     "babel-runtime": "^5.8.25",
     "chai": "^3.3.0",
+    "eslint": "^2.3.0",
+    "eslint-config-airbnb": "^6.1.0",
     "isparta": "^3.1.0",
     "istanbul": "^0.3.22",
     "jsdoc": "^3.3.3",
