@@ -4,7 +4,7 @@
   "description": "set of exercises to learn es6 and es7",
   "main": "index.js",
   "scripts": {
-    "test": "./node_modules/.bin/mocha --compilers js:babel/register -w",
+    "test": "mocha --compilers js:babel/register -w",
     "coverage": "./node_modules/.bin/_mocha -- --compilers js:babel/register",
     "cover": "./node_modules/.bin/babel-node ./node_modules/.bin/isparta cover ./node_modules/.bin/_mocha",
     "docs": "esdoc -c esdoc.json && open ./esdoc/index.html"
@@ -39,6 +39,7 @@
     "wallaby-webpack": "0.0.9"
   },
   "dependencies": {
+    "angular": "^1.5.5",
     "lodash": "^3.10.1",
     "underscore": "^1.8.3"
   }
