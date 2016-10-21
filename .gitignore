@@ -5,3 +5,4 @@ npm-debug.log
 esdoc/
 .idea
 solutions/
+yarn.lock
